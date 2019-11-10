@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    font-family: "Segoe UI Black", sans-serif;
+    margin: 0;
+    text-align: center;
+
+}
+
+header {
+    background: linear-gradient(128deg, #414670, #6c609e, #003c1d);
+    background-size: 300% 300%;
+    animation: AnimationName 8s ease infinite;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0 11%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0 11%}
+}
+@keyframes AnimationName {
+    0%{background-position:0 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0 11%}
+}
+
+header img{
+    background: red;
+    position: relative;
+    -webkit-animation: imgMove 15s infinite;
+    animation: imgMove 15s infinite;
+    -webkit-animation-direction: alternate-reverse;
+    animation-direction: alternate-reverse;
+    width: 350px;
+}
+@-webkit-keyframes imgMove {
+    from {right: -500px;}
+    to {right: 500px;}
+
+}
+
+@keyframes imgMove {
+    from {right: -500px;}
+    to {right: 500px;}
+
+}
+
+main {
+    padding: 40px;
+}
+
+h1 {
+    font-weight: lighter;
+    margin: 20px 0;
+}
+
+h3 {
+    margin: 20px 0;
+}
+
+p {
+    line-height: 1.5;
+}
