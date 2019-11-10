@@ -1,6 +1,6 @@
 html, body {
     height: 100%;
-    font-family: "Segoe UI Black", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     margin: 0;
     text-align: center;
 
@@ -21,7 +21,7 @@ header {
 }
 
 header img{
-    background: red;
+    background: none;
     position: relative;
     animation: app_imgMove_3ujr7 15s infinite;
     animation-direction: alternate-reverse;

@@ -7179,6 +7179,10 @@ class _default extends _doz.Component {
 exports.default = _default;
 },{"doz":"../node_modules/doz/dist/doz.js"}],"../image/robot-01.jpg":[function(require,module,exports) {
 module.exports = "/robot-01.9af287d1.jpg";
+},{}],"../image/robot-02.jpg":[function(require,module,exports) {
+module.exports = "/robot-02.a66d032b.jpg";
+},{}],"../image/robot-03.jpg":[function(require,module,exports) {
+module.exports = "/robot-03.eee81d9b.jpg";
 },{}],"../client/cmp/pages/catalogo.js":[function(require,module,exports) {
 "use strict";
 
@@ -7191,14 +7195,44 @@ var _doz = require("doz");
 
 var _robot = _interopRequireDefault(require("../../../image/robot-01.jpg"));
 
+var _robot2 = _interopRequireDefault(require("../../../image/robot-02.jpg"));
+
+var _robot3 = _interopRequireDefault(require("../../../image/robot-03.jpg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 class _default extends _doz.Component {
   template(h) {
     return h`
-            <div>
-                 <h1>Catalogo</h1>
-                 <img src="${_robot.default}">
+            <style>
+                .container {
+                    display: flex;
+                }
+                
+                .image {
+                    height: 200px;
+                    margin: 10px;
+                }
+                .details {
+                    text-align: left;
+                }
+            </style>
+            
+            <h1>Catalogo</h1>
+            
+            <div class="container">
+                <img class="image" src="${_robot.default}">
+                <div class="details"> 
+                    <h2>Robot 1</h2>
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
+            </div>
+            <div class="container">
+                <img class="image" src="${_robot.default}">
+                <div class="details"> 
+                    <h2>Robot 1</h2>
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
             </div>
         `;
   }
@@ -7213,7 +7247,7 @@ class _default extends _doz.Component {
 }
 
 exports.default = _default;
-},{"doz":"../node_modules/doz/dist/doz.js","../../../image/robot-01.jpg":"../image/robot-01.jpg"}],"../client/app.js":[function(require,module,exports) {
+},{"doz":"../node_modules/doz/dist/doz.js","../../../image/robot-01.jpg":"../image/robot-01.jpg","../../../image/robot-02.jpg":"../image/robot-02.jpg","../../../image/robot-03.jpg":"../image/robot-03.jpg"}],"../client/app.js":[function(require,module,exports) {
 "use strict";
 
 var _doz = _interopRequireDefault(require("doz"));

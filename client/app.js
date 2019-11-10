@@ -41,7 +41,6 @@ new Doz({
                 <h1>Welcome to Lampobot</h1>
                 <p>Take light in a Robot-way</p>
                 <img src="${logo}">
-                <p>hello</p>
                 <${Nav}/>
             </header>
             <main>
